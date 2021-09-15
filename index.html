@@ -1,33 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeWork</title>
 
-
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        #main {
-            margin-left: 50%;
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+      body{
+          width: 100%;
+      }
+      #main {
+        margin-left: 50%;
 
-            width: 800px;
-            height: 800px;
-            transform: translateX(-400);
+        width: 800px;
+        height: 800px;
+        transform: translateX(-400px);
 
-            background-color: aquamarine;
-        }
+        /* background-color: aquamarine; */
+      }
+
+      .circle {
+        position: absolute;
+        display: inline-block;
+        border-radius: 50%;
+        margin-left: 50%;
+        text-align: center;
+      }
+
+      #c1 {
+        background-color: rgb(6,40,90);
+        width: 500px;
+        height: 500px;
+
+        transform: translate(-250px,0px);
+        z-index: 1;
+      }
+      #c2 {
+        background-color:rgb(38,99,200);
+        width: 400px;
+        height: 400px;
+
+        transform: translate(-200px,100px);
+        z-index: 2;
+      }
+      #c3 {
+        background-color: rgb(199,202,211);
+        width: 300px;
+        height: 300px;
+
+        transform: translate(-150px,200px);
+        z-index: 3;
+      }
+      #c4 {
+        background-color: rgb(38,99,200);
+        width: 200px;
+        height: 200px;
+
+        transform: translate(-100px,300px);
+        z-index: 4;
+      }
+      span {
+          color: brown;
+          font-size: 30px;
+          display: inline-block;
+          transform: translateY(20px);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="main">
-
+      <div class="circle" id="c1"><span>A</span></div>
+      <div class="circle" id="c2"><span>B</span></div>
+      <div class="circle" id="c3"><span>C</span></div>
+      <div class="circle" id="c4"><span>D</span></div>
     </div>
-</body>
+  </body>
 </html>
